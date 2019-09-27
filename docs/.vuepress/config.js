@@ -20,34 +20,25 @@ module.exports = {
         link: '/'
       },
       {
-        text: '库',
+        text: '收藏',
         link: '/repository/'
-      },
-      {
-        text: '网站',
-        link: '/website/'
       },
       {
         text: '文章',
         link: '/article/'
       },
+	    {
+	    	text: '问题',
+		    link: '/issues/'
+	    },
       {
-        text: '最近阅读',
-        link: '/article/read'
-      },
-      // { text: '工具', link: 'https://google.com' },
-      {
-        text: '面试',
-        link: '/interview/'
-      },
-      {
-        text: 'Blog',
-        link: '/blog/'
+        text: '总结',
+        link: '/notes/'
       }
     ],
     sidebar: utils.inferSiderbars(),
     lastUpdated: '上次更新',
-    repo: 'mamba-in/mamba-in.github.io',
+    repo: 'mamba-in/cloud-notes',
     editLinks: true,
     docsDir: 'docs',
     editLinkText: '在 GitHub 上编辑此页',
