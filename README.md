@@ -1,8 +1,5 @@
----
-home: true
-heroImage: /basketball.jpg
-actionText: 开始了解 →
-actionLink: /repository/
+##  Cloud-Notes
 
-footer: MIT Licensed | Copyright © 2019-WangLei
----
+- 记录开发中遇到的问题
+- 总结生活中的感想
+- 学习过程中的笔记
