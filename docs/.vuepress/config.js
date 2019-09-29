@@ -27,10 +27,10 @@ module.exports = {
         text: '文章',
         link: '/article/'
       },
-	    {
-	    	text: '问题',
-		    link: '/issues/'
-	    },
+      {
+        text: '问题',
+        link: '/issues/'
+      },
       {
         text: '总结',
         link: '/notes/'
@@ -51,11 +51,13 @@ module.exports = {
       }
     }
   },
-  ga: 'UA-109340118-1',
-  markdown: {
-    config: md => {
-      // use more markdown-it plugins!
-      md.use(require('markdown-it-include'))
-    }
-  }
+  plugins: [
+    '@vuepress/back-to-top',
+    [
+      '@vuepress/google-analytics',
+      {
+        ga: 'UA-148988824-1'
+      }
+    ]
+  ]
 }

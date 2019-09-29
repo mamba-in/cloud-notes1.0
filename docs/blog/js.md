@@ -1,6 +1,7 @@
 # Javascript
 
 <!-- prettier-ignore-start -->
+<<< @/docs/blog/javascript/querySelectorAll与getElementsBy区别.md
 !!!include(docs/blog/javascript/querySelectorAll与getElementsBy区别.md)!!!
 
 !!!include(docs/blog/javascript/NodeList和HTMLCollection之间的关系.md)!!!
