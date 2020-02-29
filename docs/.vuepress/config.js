@@ -28,6 +28,10 @@ module.exports = {
         link: '/article/'
       },
       {
+        text: '学习',
+        link: '/study/'
+      },
+      {
         text: '问题',
         link: '/issues/'
       },
