@@ -1,4 +1,5 @@
 const utils = require('./utils')
+const md = require('markdown-it')().use(require('markdown-it-include'))
 
 module.exports = {
   title: 'Cloud-Notes',
@@ -22,10 +23,6 @@ module.exports = {
       {
         text: '收藏',
         link: '/repository/'
-      },
-      {
-        text: '文章',
-        link: '/article/'
       },
       {
         text: '学习',
@@ -57,6 +54,7 @@ module.exports = {
   },
   plugins: [
     '@vuepress/back-to-top',
+    md,
     [
       '@vuepress/google-analytics',
       {
