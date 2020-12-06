@@ -3,7 +3,7 @@
 ## 编译模板字符串
 
 ```js
-compile(template) {
+compile(template){
   const evalExpr = /<%=(.+?)%>/g
   const expr = /<%([\s\S]+?)%>/g
 
