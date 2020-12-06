@@ -15,7 +15,7 @@ async function generate() {
 
   const toc = TOC(content.join('\n')).content
 
-  content = [header, toc, ...content]
+  content = [toc, ...content]
 
   fs.writeFile(pathResolve('README.md'), content.join('\n'), 'utf8', () => {
     console.log('success')
