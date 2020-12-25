@@ -7,6 +7,7 @@
 ## Component
 
 所有的`Component`文件都是以大写开头 (PascalCase)，这也是[官方推荐](https://cn.vuejs.org/v2/style-guide/index.html#%E5%8D%95%E6%96%87%E4%BB%B6%E7%BB%84%E4%BB%B6%E6%96%87%E4%BB%B6%E7%9A%84%E5%A4%A7%E5%B0%8F%E5%86%99%E5%BC%BA%E7%83%88%E6%8E%A8%E8%8D%90)，除了`index.vue`
+
 例子：
 
 - `@/components/Pagination/index.vue`
@@ -24,6 +25,7 @@
 ## Views
 
 在`views`文件下，代表路由的`.vue`文件都使用横线连接 (kebab-case)，代表路由的`文件夹`也是使用同样的规则。
+
 例子：
 
 - `@/views/error-page/index.vue`
