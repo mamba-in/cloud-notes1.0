@@ -1,5 +1,19 @@
 # 下划线转换驼峰
 
+> 简单对象（一维）实现转换比较容易，可以使用 `lodash` 的 `mapKeys`方法配合正则轻松完成
+
+```js
+/**
+ * @param { Object } data
+ * @returns { Object }
+ */
+
+const _ = require('./lodash')
+const result = _.mapKeys(data, (value, key) =>
+  key.replace(/_(\w)/g, (arg0, arg1) => arg1.toUpperCase())
+)
+```
+
 :::tip
 深度处理复杂数据类型( Object、Array )的`key`**下划线** 转换 **驼峰命名**
 :::
@@ -7,7 +21,12 @@
 - 封装方法
 
 ```js
-function getCamelCase(data) {
+/**
+ * @param { Object } data
+ * @returns { Object }
+ */
+
+const getCamelCase = data => {
   const targetData = data.constructor === Object ? {} : []
 
   Object.keys(data).forEach(keys => {
