@@ -3,13 +3,11 @@
 ## 编译模板字符串
 
 ```js
-compile(template){
+const compile = (template) => {
   const evalExpr = /<%=(.+?)%>/g
   const expr = /<%([\s\S]+?)%>/g
 
-  template = template
-    .replace(evalExpr, '`); \n  echo( $1 ); \n  echo(`')
-    .replace(expr, '`); \n $1 \n  echo(`')
+  template = template.replace(evalExpr, '`); \n  echo( $1 ); \n  echo(`').replace(expr, '`); \n $1 \n  echo(`')
 
   template = 'echo(`' + template + '`);'
 

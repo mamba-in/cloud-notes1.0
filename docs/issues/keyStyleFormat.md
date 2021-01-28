@@ -25,18 +25,13 @@ const keyStyleFormat = data => {
   Object.keys(data).forEach(keys => {
     if (data[keys] && typeof data[keys] === 'object') {
       if (hasUnderscore.test(keys)) {
-        targetData[
-          keys.replace(hasUnderscore, styleUnderscoreFormat)
-        ] = keyStyleFormat(data[keys])
+        targetData[ keys.replace(hasUnderscore, styleUnderscoreFormat)] = keyStyleFormat(data[keys])
       } else {
-        targetData[
-          keys.replace(/([A-Z])/g, '_$1').toLowerCase()
-        ] = keyStyleFormat(data[keys])
+        targetData[keys.replace(/([A-Z])/g, '_$1').toLowerCase()] = keyStyleFormat(data[keys])
       }
     } else {
       if (hasUnderscore.test(keys)) {
-        targetData[keys.replace(hasUnderscore, styleUnderscoreFormat)] =
-          data[keys]
+        targetData[keys.replace(hasUnderscore, styleUnderscoreFormat)] = data[keys]
       } else {
         targetData[keys.replace(/([A-Z])/g, '_$1').toLowerCase()] = data[keys]
       }

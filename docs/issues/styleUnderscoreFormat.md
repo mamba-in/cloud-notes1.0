@@ -9,9 +9,7 @@
  */
 
 const _ = require('./lodash')
-const result = _.mapKeys(data, (value, key) =>
-  key.replace(/_(\w)/g, (arg0, arg1) => arg1.toUpperCase())
-)
+const result = _.mapKeys(data, (value, key) => key.replace(/_(\w)/g, (arg0, arg1) => arg1.toUpperCase()))
 ```
 
 :::tip
@@ -33,12 +31,9 @@ const getCamelCase = data => {
 
   Object.keys(data).forEach(keys => {
     if (data[keys] && typeof data[keys] === 'object') {
-      targetData[
-        keys.replace(hasUnderscore, styleUnderscoreFormat)
-      ] = getCamelCase(data[keys])
+      targetData[keys.replace(hasUnderscore, styleUnderscoreFormat)] = getCamelCase(data[keys])
     } else {
-      targetData[keys.replace(hasUnderscore, styleUnderscoreFormat)] =
-        data[keys]
+      targetData[keys.replace(hasUnderscore, styleUnderscoreFormat)] = data[keys]
     }
   })
   return targetData
