@@ -28,14 +28,16 @@ const result = _.mapKeys(data, (value, key) =>
 
 const getCamelCase = data => {
   const targetData = data.constructor === Object ? {} : []
+  const hasUnderscore = /_(\w)/g
+  const styleUnderscoreFormat = (arg0, arg1) => arg1.toUpperCase()
 
   Object.keys(data).forEach(keys => {
     if (data[keys] && typeof data[keys] === 'object') {
       targetData[
-        keys.replace(/_(\w)/g, (arg0, arg1) => arg1.toUpperCase())
+        keys.replace(hasUnderscore, styleUnderscoreFormat)
       ] = getCamelCase(data[keys])
     } else {
-      targetData[keys.replace(/_(\w)/g, (arg0, arg1) => arg1.toUpperCase())] =
+      targetData[keys.replace(hasUnderscore, styleUnderscoreFormat)] =
         data[keys]
     }
   })
