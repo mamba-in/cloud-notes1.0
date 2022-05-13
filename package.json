@@ -2,7 +2,7 @@
   "name": "mingtian-transportation-docs",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/vbenjs/vue-vben-admin-doc",
+  "repository": "https://github.com/mamba-in/cloud-notes",
   "author": "Mamba <bill88783@gmail.com>",
   "license": "MIT",
   "scripts": {
