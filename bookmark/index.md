@@ -404,7 +404,6 @@ sidebar: auto
 - [gitmoji](https://github.com/carloscuesta/gitmoji) 通过 emoji 表达 git 的操作内容
 - [starcharts](https://starcharts.herokuapp.com/PanJiaChen/vue-element-admin) 可以把你一个项目的 stars 增长轨迹当做 svg 放在 readme 中
 - [mockapi](https://www.mockapi.io/) 一个还不错的在线 mock 服务（可在线可视化编辑），可以满足大部分简单需求了
-- [coder](coder.com) 在线版 VS Code
 - [browserstack](https://www.browserstack.com/) 远程调整各种版本浏览器 兼容性问题
 - [carbon](https://carbon.now.sh/) 根据源码生成图片 主要作用是让你打代表片段分享的时候更好看一点
 - [clipboard2markdown](https://euangoddard.github.io/clipboard2markdown/) 将你所有复制进去的内容都转化为 markdown
@@ -415,7 +414,6 @@ sidebar: auto
 - [Lorem Picsum](https://picsum.photos/) 提供免费的占位图
 - [sm.ms](https://sm.ms/) 免费图床
 - [webpagetest](https://www.webpagetest.org/) 前端性能分析工具
-- [网络安全的教程](hacksplaining.com/lessons)
 - [Ananas Analytics Desktop](https://ananasanalytics.com/) 一站式 数据可视化
 - [“零宽” 长度的短网址服务](https://zws.im) 利用“零宽字符”来缩短 url，还支持统计
 - [hotjar](https://www.hotjar.com/) 用户调研 支持用户反馈 录屏 heatMap
@@ -444,7 +442,6 @@ sidebar: auto
 - [nord ](https://github.com/arcticicestudio/nord) 北欧性冷淡风主题配色
 - [Unsplash](https://unsplash.com/) 提供免费的高清图片
 - [colorkitty](https://colorkitty.com/) 从你的图片中提取配色
-- [design.youzan](design.youzan.com) 有赞设计原则
 
 ## 有趣
 
